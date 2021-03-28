@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------*/
+html {
+    font-size: 100%
+}
+body{
+     font-family: 'Noto Sans JP', sans-serif;
+     line-height: 1.7;
+     color:  #432;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* HEADER
+----------------------------*/
+.logo {
+    width: 160px;
+    margin-top: 14px;
+}
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li {
+     margin-left: 36px;
+}
+.main-nav a {
+     color: #432;
+}
+.main-nav a:hover {
+     color: #0bd;
+}
+.page-header {
+      display: flex;
+      justify-content: space-between;
+}
+.wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 4%;
+}
+/* home
+---------------------------------*/
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+/*見出し*/
+.page-title {
+    font-size: 5rem;
+    font-family: 'philosopher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+/* ボタン */
+.button {
+    font-size: 1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+.button:hover {
+    background: #0090aa;
+}
+
+/* 大きな背景画像 */
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+#home {
+    background-image: url(DSC03266.JPG);
+    min-height: 100vh;
+}
+#home .page-title {
+    text-transform: none;
+}
+
+/* NEWS
+-------------------------------*/
+#news {
+    background-image: url(DSC02378.JPG);
+    height: 270px;
+    margin-bottom: 40px
+}
+#news .page-title {
+    text-align: center;
+}
+
+/* NEWS Knowledge
+-----------------------*/
+.v_line_left {
+  font-size: 1.375rem;
+  padding: 0 8px 8px;
+  border-left: 2px #0bd solid;
+  font-weight: normal;
+}
+
+/* フッター
+--------------------------------*/
+footer {
+    background: #432;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+/* 記事部分　*/
+article {
+    width: 74%
+}
+
+/* サイドバー　*/
+aside {
+    width: 22%;
+}
+.news-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.post-info {
+    position: relative;
+    padding-top: 4px;
+    margin-bottom: 40px;
+}
+.post-date {
+    background: #0bd;
+    border-radius: 50%;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    font-size: 1.625rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+}
+.post-date span {
+    font-size: 1rem;
+    border-top: 1px rgba(225,225,225,.5) solid;
+    padding-top: 6px;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+.post-title {
+    font-family: "Yu Mincho", "YuMincho", serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.post-title,
+.post-cat {
+    margin-left: 120px;
+}
+article img {
+    margin-bottom: 20px;
+}
+article p {
+    margin-bottom: 1rem;
+}
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
+}
+aside p {
+    padding: 12px 10px;
+}
+.sub-menu {
+    margin-bottom: 60px;
+    list-style: none;
+}
+.sub-menu li {
+    border-bottom: 1px #ddd solid;
+}
+.sub-menu a {
+    color: #432;
+    padding: 10px;
+    display: block;
+}
+.sub-menu a:hover {
+     color: #0bd;
+}
+
+/* ADVENTURE
+---------------------------------*/
+#adventure{
+    background-image: url(DSC01952.JPG);
+    min-height: 100vh;
+}
+.adventure-content {
+    max-width: 560px;
+    margin-top: 10%;
+    color: #cc0000;
+}
+.adventure-content .page-title {
+    text-align: center;
+}
+.adventure-content p {
+    font-size: 1.125rem;
+    margin: 10px;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 6%;
+    margin-bottom: 50px;
+    color: #f5a500
+}
+.back {
+    background-color: #000
+}
+
+/* CONTACT
+-------------------------------------*/
+#contact {
+    background-image: url(DSC03018.JPG);
+    min-height: 100vh;
+}
+#contact .wrapper {
+    color: #c8d599;
+}
+
+/* フォーム */
+form div {
+    margin-bottom: 14px;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255,255,255,.5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+/* 店舗情報･地図　*/
+#location {
+    pandding: 4% 0;
+}
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.location-info {
+    width: 22%;
+    margin-top: 20px;
+}
+.location-info p {
+    padding: 12px 10px;
+}
+.location-map {
+    width: 74%;
+    margin-top: 20px;
+}
+
+/* iframe */
+iframe {
+    width: 100%;
+}
+
+/* SNS */
+#sns {
+    background: #FAF7F0;
+    padding: 4% 0;
+}
+#sns .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#sns .sub-title {
+    margin-bottom: 30px;
+}
+.sns-box {
+    width: 30%;
